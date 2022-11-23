@@ -1,0 +1,191 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Swim = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Glide = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local NoClip = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local SuperJump = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Airwalk = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Ragdoll = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Stability = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.Position = UDim2.new(0.226303324, 0, 0.180722892, 0)
+Frame.Size = UDim2.new(0, 187, 0, 243)
+
+Swim.Name = "Swim"
+Swim.Parent = Frame
+Swim.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Swim.Position = UDim2.new(0.0726741254, 0, 0.243889123, 0)
+Swim.Size = UDim2.new(0, 57, 0, 27)
+Swim.Font = Enum.Font.SourceSans
+Swim.Text = "Swim"
+Swim.TextColor3 = Color3.fromRGB(0, 0, 0)
+Swim.TextSize = 14.000
+Swim.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(4);
+
+end)
+UICorner.Parent = Swim
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Frame_2.BackgroundTransparency = 0.300
+Frame_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(-0.00195753132, 0, -0.000347058958, 0)
+Frame_2.Size = UDim2.new(0, 187, 0, 46)
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = Frame_2
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0335054994, 0, -0.0406844616, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 48)
+TextLabel.Font = Enum.Font.Oswald
+TextLabel.Text = "StickySploit"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 45.000
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Frame
+
+Glide.Name = "Glide"
+Glide.Parent = Frame
+Glide.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Glide.Position = UDim2.new(0.0726741254, 0, 0.40026772, 0)
+Glide.Size = UDim2.new(0, 57, 0, 27)
+Glide.Font = Enum.Font.SourceSans
+Glide.Text = "Glide"
+Glide.TextColor3 = Color3.fromRGB(0, 0, 0)
+Glide.TextSize = 14.000
+Glide.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(12);
+
+end)
+UICorner_4.Parent = Glide
+
+NoClip.Name = "NoClip"
+NoClip.Parent = Frame
+NoClip.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+NoClip.Position = UDim2.new(0.0726741254, 0, 0.556646347, 0)
+NoClip.Size = UDim2.new(0, 57, 0, 27)
+NoClip.Font = Enum.Font.SourceSans
+NoClip.Text = "Noclip"
+NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.TextSize = 14.000
+NoClip.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11);
+
+end)
+UICorner_5.Parent = NoClip
+
+SuperJump.Name = "SuperJump"
+SuperJump.Parent = Frame
+SuperJump.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+SuperJump.Position = UDim2.new(0.0726741254, 0, 0.70890975, 0)
+SuperJump.Size = UDim2.new(0, 57, 0, 27)
+SuperJump.Font = Enum.Font.SourceSans
+SuperJump.Text = "SuperJump"
+SuperJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperJump.TextSize = 14.000
+SuperJump.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(13);
+
+end)
+UICorner_6.Parent = SuperJump
+
+Airwalk.Name = "Airwalk"
+Airwalk.Parent = Frame
+Airwalk.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Airwalk.Position = UDim2.new(0.594878256, 0, 0.239773959, 0)
+Airwalk.Size = UDim2.new(0, 57, 0, 27)
+Airwalk.Font = Enum.Font.SourceSans
+Airwalk.Text = "AirWalk"
+Airwalk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Airwalk.TextSize = 14.000
+Airwalk.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(10);
+
+end)
+UICorner_7.Parent = Airwalk
+
+Ragdoll.Name = "Ragdoll"
+Ragdoll.Parent = Frame
+Ragdoll.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Ragdoll.Position = UDim2.new(0.594878256, 0, 0.396152526, 0)
+Ragdoll.Size = UDim2.new(0, 57, 0, 27)
+Ragdoll.Font = Enum.Font.SourceSans
+Ragdoll.Text = "Ragdoll"
+Ragdoll.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ragdoll.TextSize = 14.000
+Ragdoll.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(1);
+
+end)
+UICorner_8.Parent = Ragdoll
+
+Stability.Name = "Stability"
+Stability.Parent = Frame
+Stability.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Stability.Position = UDim2.new(0.594878256, 0, 0.552531123, 0)
+Stability.Size = UDim2.new(0, 57, 0, 27)
+Stability.Font = Enum.Font.SourceSans
+Stability.Text = "Stability"
+Stability.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stability.TextSize = 14.000
+Stability.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(5);
+
+end)
+UICorner_9.Parent = Stability
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.00658945739, 0, 0.819301963, 0)
+TextLabel_2.Size = UDim2.new(0, 140, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Made By Stickytip4000"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 9.000
+
+-- Scripts:
+
+local function UZNJCXL_fake_script() -- Swim.LocalScript 
+	local script = Instance.new('LocalScript', Swim)
+
+	
+end
+coroutine.wrap(UZNJCXL_fake_script)()
+local function JRBOIAQ_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(JRBOIAQ_fake_script)()
